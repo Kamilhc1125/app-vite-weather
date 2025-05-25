@@ -1,5 +1,3 @@
-import type { StringToBoolean } from "class-variance-authority/types";
-
 export interface Coordinates {
   lat: number;
   lon: number;
