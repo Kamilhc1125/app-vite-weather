@@ -101,6 +101,7 @@ const WeatherDashboard = () => {
           size={"icon"}
           onClick={handleRefresh}
           disabled={weatherQuery.isFetching || forecastQuery.isFetching}
+          className="cursor-pointer"
         >
           <RefreshCw className={`h-4 w-4 ${weatherQuery.isFetching ? "animate-spin" : ""}`} />
         </Button>

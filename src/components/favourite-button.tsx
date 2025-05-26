@@ -33,7 +33,7 @@ const FavouriteButton = ({ data }: FavouriteButtonProps) => {
       variant={isCurrentylFavourite ? "default" : "outline"}
       size={"icon"}
       onClick={handleToggleFavourite}
-      className={isCurrentylFavourite ? "bg-yellow-500 hover:bg-yellow-600" : ""}
+      className={`cursor-pointer ${isCurrentylFavourite ? "bg-yellow-500 hover:bg-yellow-600" : ""}`}
     >
       <Star className={`h-4 w-4 ${isCurrentylFavourite ? "fill-current" : ""}`} />
     </Button>

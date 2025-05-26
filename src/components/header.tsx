@@ -10,14 +10,12 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur py-2">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-16 items-center justify-between px-12 sm:px-10 md:px-4">
         <Link to={"/"}>
           <img src={isDark ? "/logo.png" : "/logo2.png"} alt="logo" className="h-14" />
         </Link>
         <div className="flex gap-4">
-
           <CitySearch />
-
           <div
             onClick={() => setTheme(isDark ? "light" : "dark")}
             className={`flex items-center cursor-pointer transition-transform duration-500 ${isDark ? "rotate-180" : "rotate-0"}`}

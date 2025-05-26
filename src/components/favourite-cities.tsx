@@ -24,9 +24,9 @@ const FavouriteCities = () => {
 
   return (
     <>
-      <h1 className="text-xl font-bold tracking-tight">Favourites</h1>
+      <h1 className="text-xl font-bold tracking-tight">Favourite Cities</h1>
       <ScrollArea className="w-full pb-4">
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           {favourites.map((city) => {
             return (
               <FavouriteCityTablet
@@ -51,7 +51,8 @@ const FavouriteCityTablet = ({ id, name, lat, lon, onRemove }: FavouriteCityTabl
       onClick={() => navigate(`/city/${name}?lat=${lat}&lon=${lon}`)}
       role="button"
       tabIndex={0}
-      className="relative flex min-w-[250px] cursor-pointer items-center gap-3 rounded-lg border bg-card p-4 pr-8 shadow-sm transition-colors hover:shadow-md"
+      // className="relative flex min-w-full sm:min-w-[120px] cursor-pointer items-center gap-3 rounded-lg border bg-card p-4 pr-8 shadow-sm transition-colors hover:shadow-md"
+      className="relative sm:basis-[calc(50%-1rem)] md:basis-[calc(33%-1rem)] lg:sm:basis-[calc(25%-1rem)] flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 cursor-pointer  gap-3 rounded-lg border bg-card p-4 pr-8 shadow-sm transition-colors hover:shadow-md"
     >
       <Button
         variant="ghost"
