@@ -8,9 +8,9 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  AreaChart,
-  CartesianGrid,
-  Area
+  // AreaChart,
+  // CartesianGrid,
+  // Area
 } from "recharts"
 
 interface HourlyTemperatureProps {
